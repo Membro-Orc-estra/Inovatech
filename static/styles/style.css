@@ -12,6 +12,7 @@
     --fundo: url(../img/Desktop.svg);
 
     --H1-family: 'Orbitron', sans-serif;
+    --H1-decoration: underline ;
     --H1-weight: 800;
 
     --H2-family: 'Inter', sans-serif;
@@ -49,7 +50,6 @@ header {
 
 .container {
     width: 90%;
-    max-width: 100vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -59,7 +59,7 @@ header {
 /* Estilização do Logo "InovaTech"*/
 .logo {
     color: var(--cor-texto);
-    text-decoration: underline ;
+    text-decoration: var(--H1-decoration) ;
     font-size: 2rem; 
     position: relative; 
     transition: color 0.3s ease;
@@ -89,7 +89,6 @@ nav a:hover {
 footer {
     background-color: var(--fundo-primario);
     color: var(--cor-texto);
-    /* font-weight: var(--corpo-weight); */
     text-align: center;
     font-family: 'Inter', sans-serif;
     display: flex;
