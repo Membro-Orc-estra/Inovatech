@@ -1,0 +1,36 @@
+@import url(./home_page/home_page.css);
+
+
+:root{
+    --fundo-primario: #0C0B16;
+    --fundo-secundaria: #1A162B;
+    --marca-primaria: #4B3FA3;
+    --marca-secudaria :#7B6CF6;
+    --acento-claro: #8DD6FF;
+    --cor-texto: #ECEBF3;
+
+    --fundo: url(../img/Desktop.svg);
+
+    --H1-family: 'Orbitron', sans-serif;
+    --H1-weight: 800;
+
+    --H2-family: 'Inter', sans-serif;
+    --H2-weight: 500;
+
+    --corpo-family: 'Inter', sans-serif;
+    --corpo-weight: 400;
+}
+
+
+body {
+    background-image: var(--fundo);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: medium;
+    overflow-x: hidden;
+}
