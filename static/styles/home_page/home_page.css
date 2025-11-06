@@ -1,14 +1,16 @@
+/* =================== PRIMEIRO BLOCO DA PÁGINA INICIAL =================== */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 0;
+    gap: 3rem;
 }
 
 .container-main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
     width: 90%;
     color: var(--cor-texto);
 }
@@ -48,4 +50,35 @@ main {
     color : var(--cor-texto);
     padding: 1rem 2.5rem;
     border-radius: 4rem;
+}
+
+/* =================== SEGUNDO BLOCO DA PÁGINA INICIAL =================== */
+
+.descricao{
+    background-image: url(../../img/texto-home.svg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--H2-family);
+    color: var(--cor-texto);
+    font-size:  1.5rem;
+}
+
+.descricao-content strong{
+    color: var(--acento-claro);
+}
+.descricao-content h2{
+    text-align: center;
+    font-weight: var(--H2-weight);
 }
