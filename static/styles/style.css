@@ -1,4 +1,5 @@
 @import url(./home_page/home_page.css);
+@import url(./reset.css);
 
 
 :root{
@@ -21,20 +22,6 @@
 
     --corpo-family: 'Inter', sans-serif;
     --corpo-weight: 400;
-}
-
-
-body {
-    background-image: var(--fundo);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 100vh;
-
-    
-    font-family: 'Inter', sans-serif;
-    font-weight: medium;
-    overflow-x: hidden;
 }
 
 /* =================== CABEÇALHO (HEADER) =================== */

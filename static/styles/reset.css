@@ -9,4 +9,12 @@
 body{
     font-size: 100%;
     list-style-type: none;
+    background-image: var(--fundo);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-weight: medium;
+    overflow-x: hidden;
 }
