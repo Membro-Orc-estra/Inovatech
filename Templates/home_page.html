@@ -18,7 +18,7 @@
     <header>
         <div class="container">
             <div class="menu-mobile">
-                <a id="botao-menu" class="menu-icon" onclick="clickMenu()">☰</a>
+                <a id="botao-menu" class="menu-icon">☰</a>
                 <div id="navbar" class="navbar-mobile oculto">
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -52,7 +52,7 @@
                     </div>
                 </section>
             </div>
-            
+
             <section class="descricao">
                 <div class="descricao-content">
                     <h2>Partimos do desejo de criar <strong>tecnologia</strong> que faz sentido, não apenas para o agora, mas para o que vem depois. Guiados pela curiosidade e pela colaboração, moldamos soluções que inspiram evolução.</h2>
@@ -89,13 +89,6 @@
             <p>© Trainne Orc'estra 2025. All rights reserved.</p>
         </div>
     </footer>
-    <script>function clickMenu() {
-            const navbarMobile = document.querySelector('.navbar-mobile');
-            if (navbarMobile.style.display === 'block') {
-                navbarMobile.style.display = 'none';
-            } else {
-                navbarMobile.style.display = 'block';
-            }
-        }</script>
+    <script src="../static/app/menu.js" defer></script>
 </body>
 </html>

@@ -16,6 +16,28 @@ main {
     color: var(--cor-texto);
 }
 
+/* =================== CONTEÚDO PRINCIPAL (MAIN) =================== */
+
+/* Garante que a imagem não vaze */
+.container-main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* * ESTA É A CORREÇÃO
+ * Quando a tela for 1024px ou menor...
+*/
+@media (max-width: 1024px) {
+    .container-main {
+        /* ...mude a direção de 'linha' para 'coluna' */
+        flex-direction: column;
+        
+        /* (Opcional) Adiciona um espaço entre a imagem 
+           (que agora está em cima) e o texto (embaixo) */
+        gap: 3rem; 
+    }
+}
+
 .pitch{
     text-align: center;
     margin: 4rem 0;
