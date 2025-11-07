@@ -8,8 +8,9 @@
     --marca-secudaria :#7B6CF6;
     --acento-claro: #8DD6FF;
     --cor-texto: #ECEBF3;
-
+    
     --fundo: url(../img/Desktop.svg);
+    --padding-main: 8rem 0;
 
     --H1-family: 'Orbitron', sans-serif;
     --H1-decoration: underline ;
@@ -42,34 +43,19 @@ header {
     background-color: var(--fundo-primario);
     width: 100%;
     padding: 1.25rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-family: 'Inter', sans-serif;
     position: fixed;
     z-index: 1000;
 }
 header .menu-mobile {
     display: none;
-    @media (max-width: 1024px) {
-        display: inline;
-    }
 }
 
 header .menu-icon {
     display: none;
-    @media (max-width: 1024px) {
-        display: inline;
-        text-decoration: none;
-        color: var(--cor-texto);
-        font-size: 2rem;
-        transition: color 0.3s ease;
-        position: relative;
-        z-index: 1002;
-        &:hover {
-            color: var(--acento-claro);
-        }
-    }
+}
+header .menu-icon:hover {
+    color: var(--acento-claro);
 }
 
 .oculto {
@@ -85,6 +71,21 @@ header .navbar-mobile {
     height: 1000vh;
     width: 9.5rem;
     z-index: 1001;
+}
+
+@media (max-width: 1024px) {
+    header .menu-mobile {
+    display: inline;
+    }
+    header .menu-icon{
+        display: inline;
+        text-decoration: none;
+        color: var(--cor-texto);
+        font-size: 2rem;
+        transition: color 0.3s ease;
+        position: relative;
+        z-index: 1002;
+    }
 }
 
 header .navbar-mobile ul {
@@ -105,12 +106,6 @@ header .navbar-mobile ul li a {
 }
 
 
-header .logo-mobile {
-    display: none;
-    @media (max-width: 768px) {
-        display: inline;
-    }
-}
 
 
 .container {
@@ -135,6 +130,22 @@ header .logo-mobile {
 }
 .logo:hover {
     color: var(--acento-claro);
+}
+
+header .logo-mobile {
+    display: none;
+    @media (max-width: 768px) {
+        display: inline;
+        color: var(--cor-texto);
+        text-decoration: var(--H1-decoration) ;
+        font-weight: var(--H1-weight);
+        font-family: var(--H1-family);
+        font-size: 3rem;
+        transition: color 0.3s ease;
+    }
+    &:hover {
+        color: var(--acento-claro);
+    }
 }
 
 /* * Estilização dos links de navegação*/
