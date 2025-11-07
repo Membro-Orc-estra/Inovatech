@@ -17,6 +17,18 @@
 
     <header>
         <div class="container">
+            <div class="menu-mobile">
+                <a id="botao-menu" class="menu-icon" onclick="clickMenu()">☰</a>
+                <div id="navbar" class="navbar-mobile oculto">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Contatos</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                        <li><a href="#">Serviços</a></li>
+                    </ul>
+                </div>
+            </div>
             <a href="#" class="logo">InovaTech</a>
             <nav>
                 <a href="#">Home</a>
@@ -25,6 +37,7 @@
                 <a href="#">Parceiros</a>
                 <a href="#">Serviços</a>
             </nav>
+            <a href="#" class="logo-mobile">InT</a>
         </div>
     </header>
 
@@ -76,6 +89,13 @@
             <p>© Trainne Orc'estra 2025. All rights reserved.</p>
         </div>
     </footer>
-
+    <script>function clickMenu() {
+            const navbarMobile = document.querySelector('.navbar-mobile');
+            if (navbarMobile.style.display === 'block') {
+                navbarMobile.style.display = 'none';
+            } else {
+                navbarMobile.style.display = 'block';
+            }
+        }</script>
 </body>
 </html>
