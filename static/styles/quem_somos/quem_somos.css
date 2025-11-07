@@ -1,0 +1,153 @@
+/* =================== PRIMEIRO BLOCO DA PÁGINA QUEM SOMOS =================== */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0;
+    gap: 3rem;
+}
+
+
+.quem-somos-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    position: relative;
+    width: 90%;
+    color: var(--cor-texto);
+    gap : 4rem;
+}
+
+.quem-somos-container img{
+    width: 100%;
+    height: auto;
+}
+
+.quem-somos{
+    text-align: left;
+}
+.quem-somos h1{
+    font-weight: var(--H1-weight);
+    font-family: var(--H1-family);
+    margin-left: -12%;
+    font-size: 3rem;
+    text-decoration: var(--H1-decoration);
+    margin-bottom: 1.5rem;
+}
+.quem-somos .ideais{
+    padding-left:2rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+.quem-somos .ideais p{
+    display: flex;
+    text-align: right;
+    color: var(--acento-claro);
+}
+
+/* =================== SEGUNDO BLOCO DA PÁGINA QUEM SOMOS =================== */
+
+
+.missao{
+    width: 90%;
+}
+.missao h1{
+    font-weight: var(--H1-weight);
+    font-family: var(--H1-family);
+    margin-left: -7%;
+    font-size: 3rem;
+    text-decoration: var(--H1-decoration);
+    margin-bottom: 1.5rem;
+}
+
+.valores-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.valores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.valores p:first-of-type {
+    min-height: 4rem; 
+}
+
+.valores h3{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.valores p{
+    text-align: center;
+    color: var(--acento-claro);
+}
+.valores p:nth-child(2){
+    color: var(--cor-texto);
+    font-weight: var(--H1-weight);
+    align-content: center;
+}
+
+/* =================== TERCEIRO BLOCO DA PÁGINA QUEM SOMOS =================== */
+
+.diretorias{
+    width: 90%;
+}
+
+.diretorias h1{
+    font-weight: var(--H1-weight);
+    font-family: var(--H1-family);
+    margin-left: -9.5%;
+    font-size: 3rem;
+    text-decoration: var(--H1-decoration);
+    margin-bottom: 1.5rem;
+}
+
+.presidencia-container,
+.diretoria-container {
+    display: flex; /* Coloca os cards lado a lado */
+    justify-content: center; /* Centraliza o grupo de cards na tela */
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    gap: 2.5rem; /* Espaço ENTRE os cards */
+    margin-bottom: 2.5rem; /* Espaço entre a linha da presidência e a da diretoria */
+}
+
+.presidencia , .diretoria {
+    width: 22.5rem; 
+    border-radius: 1.625rem;
+    overflow: hidden; 
+}
+
+.presidencia img, .diretoria img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.informacoes-presidencia, .informacoes-diretoria {
+    background-color: var(--cor-texto); 
+    padding: 1.5rem 1rem; 
+    text-align: center;   
+}
+
+.informacoes-presidencia h4, .informacoes-diretoria h4 {
+    color: var(--marca-primaria);
+    font-size: 1.5rem;  
+    font-weight: 700;   
+    margin: 0 0 0.5rem 0; 
+}
+
+.informacoes-presidencia p, .informacoes-diretoria p {
+    color: var(--marca-secudaria); 
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
