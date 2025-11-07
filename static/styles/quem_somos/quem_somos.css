@@ -23,10 +23,14 @@ main {
 .quem-somos-container img{
     width: 100%;
     height: auto;
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }
 
 .quem-somos{
     text-align: left;
+    
 }
 .quem-somos h1{
     font-weight: var(--H1-weight);
@@ -47,6 +51,9 @@ main {
     display: flex;
     text-align: right;
     color: var(--acento-claro);
+    @media (max-width: 1024px) {
+        text-align: left;
+    }
 }
 
 /* =================== SEGUNDO BLOCO DA PÁGINA QUEM SOMOS =================== */
@@ -108,7 +115,7 @@ main {
     margin-left: -9.5%;
     font-size: 3rem;
     text-decoration: var(--H1-decoration);
-    margin-bottom: 1.5rem;
+    margin-bottom: 5rem;
 }
 
 .presidencia-container,
@@ -124,6 +131,17 @@ main {
     width: 22.5rem; 
     border-radius: 1.625rem;
     overflow: hidden; 
+}
+.presidencia {
+    @media (max-width: 1024px) {
+        width: 20rem; 
+    } 
+}
+
+.diretoria {
+    @media (max-width: 1024px) {
+        width: 17rem; 
+    } 
 }
 
 .presidencia img, .diretoria img {
