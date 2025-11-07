@@ -39,6 +39,10 @@ main {
     font-size: 3rem;
     text-decoration: var(--H1-decoration);
     margin-bottom: 1.5rem;
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+        margin-left: -10%;
+    }
 }
 .quem-somos .ideais{
     padding-left:2rem ;
@@ -69,6 +73,13 @@ main {
     font-size: 3rem;
     text-decoration: var(--H1-decoration);
     margin-bottom: 1.5rem;
+    @media (max-width: 1024px) {
+        margin-left: -14%;
+    }
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+        margin-left: -13%;
+    }
 }
 
 .valores-container{
@@ -86,6 +97,9 @@ main {
 }
 .valores p:first-of-type {
     min-height: 4rem; 
+    @media (max-width: 768px) {
+        min-height: 7rem; 
+    }
 }
 
 .valores h3{
@@ -116,15 +130,29 @@ main {
     font-size: 3rem;
     text-decoration: var(--H1-decoration);
     margin-bottom: 5rem;
+    @media (max-width: 1024px) {
+        margin-left: -17%;
+    }
+    @media (max-width: 768px) {
+        /* text-align: center; */
+        font-size: 2.5rem;
+        margin-left: -17%;
+    }
 }
 
 .presidencia-container,
 .diretoria-container {
-    display: flex; /* Coloca os cards lado a lado */
-    justify-content: center; /* Centraliza o grupo de cards na tela */
-    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
-    gap: 2.5rem; /* Espaço ENTRE os cards */
-    margin-bottom: 2.5rem; /* Espaço entre a linha da presidência e a da diretoria */
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 2.5rem; 
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.presidencia-container {
+    margin-bottom: 2.5rem; 
 }
 
 .presidencia , .diretoria {
@@ -142,6 +170,9 @@ main {
     @media (max-width: 1024px) {
         width: 17rem; 
     } 
+    @media (max-width: 768px) {
+        width: 20rem; 
+    }
 }
 
 .presidencia img, .diretoria img {
