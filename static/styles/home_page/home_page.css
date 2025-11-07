@@ -18,22 +18,18 @@ main {
 
 /* =================== CONTEÚDO PRINCIPAL (MAIN) =================== */
 
-/* Garante que a imagem não vaze */
 .container-main img {
     max-width: 100%;
     height: auto;
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
 }
 
-/* * ESTA É A CORREÇÃO
- * Quando a tela for 1024px ou menor...
-*/
+
 @media (max-width: 1024px) {
     .container-main {
-        /* ...mude a direção de 'linha' para 'coluna' */
-        flex-direction: column;
-        
-        /* (Opcional) Adiciona um espaço entre a imagem 
-           (que agora está em cima) e o texto (embaixo) */
+        flex-direction: column-reverse;
         gap: 3rem; 
     }
 }
@@ -70,8 +66,13 @@ main {
 .pitch-content a{
     background-color: var(--marca-primaria);
     color : var(--cor-texto);
+    font-weight: 500;
     padding: 1rem 2.5rem;
     border-radius: 4rem;
+    @media (max-width: 1024px) {
+        padding: 1.5rem 4rem;
+        font-size: 1.2rem;
+    }
 }
 
 /* =================== SEGUNDO BLOCO DA PÁGINA INICIAL =================== */
@@ -84,10 +85,17 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1024px) {
+        background-image: none;
+        flex-direction: column;
+        gap:5rem;
+        /* padding: 2rem 0; */
+    }
 }
 
 .descricao-content{
     width: 90%;
+    /* max-width: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,6 +103,15 @@ main {
     font-family: var(--H2-family);
     color: var(--cor-texto);
     font-size:  1.5rem;
+}
+
+.descricao img{
+    display: none;
+    @media (max-width: 1024px) {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 .descricao-content strong{
