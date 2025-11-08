@@ -1,0 +1,65 @@
+/* =================== PRIMEIRO BLOCO DA PÁGINA SERVIÇOS =================== */
+
+.servicos-container{
+    background-image: url(../../img/Cabeçalho\ Serviços.svg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100% ;
+    gap : 2rem;
+}
+
+.servicos-container h1{
+    font-family: var(--H1-family);
+    font-weight: var(--H1-weight);
+    font-size: 3rem;
+    text-decoration: var(--H1-decoration);
+    color: var(--cor-texto);
+}
+
+.servicos-container h2{
+    text-align: right;
+    font-size: 2rem;
+    padding-right: 5rem;
+}
+
+/* =================== SEGUNDO BLOCO DA PÁGINA SERVIÇOS =================== */
+
+.cards-servicos{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    padding-top: 4rem;
+    width: 90%;
+    @media (max-width: 768px){
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+.card h3 {
+    display: flex;
+    min-height: 3.5rem; 
+    text-align: center; 
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    @media (max-width: 768px){
+        gap: 1rem;
+    }
+}
+
+.card li{
+    text-align: center;
+}
+
+.card li:first-of-type {
+    min-height: 2rem; 
+}
