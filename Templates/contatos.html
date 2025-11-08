@@ -6,7 +6,7 @@
     <title>InovaTech - Moldando o Amanhã</title>
     <link rel="stylesheet" href="../static/styles/style.css">
     <link rel="stylesheet" href="../static/styles/reset.css">
-    <link rel="stylesheet" href="../static/styles/parceiros/parceiros.css">
+    <link rel="stylesheet" href="../static/styles/contatos/contatos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,55 +46,63 @@
             <h1>⠀⠀⠀Estou à disposição para uma conversa</h1>
             <h2>Pronto para encontrar a melhor<br>solução? Contate nossa equipe e<br>vamos construir isso juntos.</h2>
         </div>
-        <div class="container-contato">
-            <div class="nome-email">
-                <div class="nome">
-                    <label for="Nome">Qual o seu nome?</label>
-                    <input type="text" id="nome" placeholder="Nome">
+
+        <form id="contact-form">
+
+            <div class="container-contato">
+                <div class="nome-email">
+                    <div class="nome">
+                        <label for="Nome">Qual o seu nome?</label>
+                        <input type="text" id="nome" name="Nome" placeholder="Nome" required>
+                    </div>
+                    <div class="email">
+                        <label for="Email">Qual seu e-mail?</label>
+                        <input type="email" id="email" name="Email" placeholder="Email" required>
+                    </div>
                 </div>
-                <div class="email">
-                    <label for="Email">Qual seu e-mail?</label>
-                    <input type="email" id="email" placeholder="Email">
+                
+                <div class="cargo-telefone">
+                    <div class="cargo">
+                        <label for="cargo-select">Qual o seu cargo?</label>
+                        <select id="cargo-select" name="Cargo">
+                            <option value="" disabled selected>Cargo</option>
+                            <option value="CEO/Sócio/Diretor">CEO/Sócio/Diretor</option>
+                            <option value="Gerente/Coordenador">Gerente/Coordenador</option>
+                            <option value="Analista">Analista</option>
+                            <option value="Professor/Área da Educação">Professor/Área da Educação</option>
+                            <option value="Estudante/Estagiário">Estudante/Estagiário</option>
+                            <option value="Outro">Outro Cargo</option>
+                        </select>
+                    </div>
+                    <div class="onde-conheceu">
+                        <label for="conheceu-select">Por onde nos conheceu</label>
+                        <select id="conheceu-select" name="Fonte">
+                            <option value="" disabled selected>...</option>
+                            <option value="Anúncios do Google">Anúncios do Google</option>
+                            <option value="Mídias Sociais">Mídias Sociais</option>
+                            <option value="Indicação">Indicação</option>
+                            <option value="Eventos">Eventos</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="telefone">
+                        <label for="telefone">Qual o seu telefone?</label>
+                        <input type="tel" id="telefone" name="Telefone" placeholder="Telefone">
+                    </div>
                 </div>
+                
+                <div class="mensagem">
+                    <label for="mensagem">Nos conte um pouco sobre sua necessidade</label>
+                    <textarea id="mensagem" name="Mensagem" placeholder="Mensagem" rows="5"></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+
+                <p id="form-status"></p>
+
             </div>
-            <div class="cargo-telefone">
-                <div class="cargo">
-                    <label for="cargo-select">Qual o seu cargo?</label>
-                    <select id="cargo-select" name="cargo">
-    
-                        <option value="" disabled selected>Cargo</option>
-    
-                        <option value="ceo">CEO/Sócio/Diretor</option>
-                        <option value="gerente">Gerente/Coordenador</option>
-                        <option value="analista">Analista</option>
-                        <option value="professor">Professor/Área da Educação</option>
-                        <option value="estudante">Estudante/Estagiário</option>
-                        <option value="outro">Outro Cargo</option>
-                    </select>
-                </div>
-                <div class="onde-conheceu">
-                    <label for="conheceu-select">Por onde nos conheceu</label>
-                    <select id="conheceu-select" name="conheceu">
-    
-                        <option value="" disabled selected>...</option>
-    
-                        <option value="anuncio">Anúncios do Google</option>
-                        <option value="midias-sociais">Mídias Sociais(Instagram, Facebook, Linkedin)</option>
-                        <option value="indicacao">Indicação</option>
-                        <option value="eventos">Eventos</option>
-                        <option value="outro">Outro</option>
-                    </select>
-                </div>
-                <div class="telefone">
-                    <label for="telefone">Qual o seu telefone?</label>
-                    <input type="tel" id="telefone" placeholder="Telefone">
-                </div>
-            </div>
-            <div class="mensagem">
-                <label for="mensagem">Nos conte um pouco sobre sua necessidade</label>
-                <input type="text" id="mensagem" placeholder="Mensagem">
-            </div>
-        </div>
+        </form>
+
         <h1>⠀⠀⠀Acesse nossas mídias sociais!</h1>
         <div class="midias-sociais">
             <div class="rede-social">
@@ -154,5 +162,6 @@
         </div>
     </footer>
     <script src="../static/app/menu.js" defer></script>
+    <script src="../static/app/formulario.js"></script>
 </body>
 </html>
