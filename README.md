@@ -53,4 +53,4 @@ Para a construção deste projeto, foram utilizadas as seguintes tecnologias, co
 
 ## 🎨 Protótipo
 
-* **Protótipo de Alta Fidelidade:** [Acessar no Figma](https://www.figma.com/design/XyUsffocEKRw7przVsbk0n/Pagina-do-projeto?node-id=0-1&p=f&t=NCglUxCaxCXUAbg9-0)
+* **Protótipo de Alta Fidelidade:** [Acessar no Figma](https://www.figma.com/design/nXdRqILecwtYdo1Q95m51H/Inovatech---Landing-Page?node-id=0-1&t=CWZFIrsVdbg0zVrY-1)
