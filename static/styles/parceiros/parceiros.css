@@ -20,6 +20,13 @@
         var(--marca-primaria), /* Cor do centro (ex: #4B3FA3) */
         rgba(12, 11, 22, 0) 50% /* Fim: Transparente (fundo-primario) a 50% */
     );
+    @media (max-width: 768px){
+        background-image: radial-gradient(
+        circle at 80% 100%, /* Posição do círculo: 30% da esq., 60% do topo */
+        var(--marca-primaria), /* Cor do centro (ex: #4B3FA3) */
+        rgba(12, 11, 22, 0) 50% /* Fim: Transparente (fundo-primario) a 50% */
+    );
+    }
 }
 
 .container-parceiros h1,
