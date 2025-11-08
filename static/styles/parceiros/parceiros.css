@@ -27,6 +27,7 @@
         rgba(12, 11, 22, 0) 50% /* Fim: Transparente (fundo-primario) a 50% */
     );
     }
+    
 }
 
 .container-parceiros h1,
@@ -48,6 +49,12 @@
     color: var(--acento-claro);
     font-size: 2rem;
     padding-right: 5rem;
+    @media(max-width: 451px){
+        font-size: 1.2rem;
+        text-align: center;
+        padding-left: 4rem;
+        
+    }
 }
 
 /* =================== SEGUNDO BLOCO DA PÁGINA PARCEIROS =================== */

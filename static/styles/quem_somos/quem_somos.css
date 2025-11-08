@@ -87,6 +87,9 @@ main {
     justify-content: space-between;
     padding: 2rem 0;
     gap: 2rem;
+    @media(max-width: 451px){
+        flex-direction: column;
+    }
 }
 
 .valores{
