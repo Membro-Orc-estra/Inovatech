@@ -12,7 +12,7 @@ O objetivo principal é traduzir a identidade, os valores e a visão de futuro d
 
 Pode visualizar o projeto final hospedado no link abaixo:
 
-**[https://SEU_LINK_DO_VERCEL_OU_GITHUB_PAGES.com](https://SEU_LINK_DO_VERCEL_OU_GITHUB_PAGES.com)**
+**[https://membro-orc-estra.github.io/Inovatech/](https://membro-orc-estra.github.io/Inovatech/)**
 
 *(Nota: O projeto também foi prototipado em alta fidelidade no Figma)*
 
