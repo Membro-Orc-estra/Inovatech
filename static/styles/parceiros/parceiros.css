@@ -1,0 +1,65 @@
+/* =================== PRIMEIRO BLOCO DA PÁGINA PARCEIROS =================== */
+.container-parceiros{
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100% ;
+    gap : 2rem;
+    /* Garante que o gradiente não "vaze" */
+    overflow: hidden; 
+    position: relative; /* Necessário para o z-index (passo 2) */
+
+    /* ----- ADICIONE ISTO ----- */
+    /* Cria o "brilho" roxo no fundo */
+    /* (Isto sobrepõe-se à cor de fundo do seu <body>) */
+    background-image: radial-gradient(
+        circle at 80% 145%, /* Posição do círculo: 30% da esq., 60% do topo */
+        var(--marca-primaria), /* Cor do centro (ex: #4B3FA3) */
+        rgba(12, 11, 22, 0) 50% /* Fim: Transparente (fundo-primario) a 50% */
+    );
+}
+
+.container-parceiros h1,
+.container-parceiros h2 {
+    position: relative;
+    z-index: 2;
+}
+
+.container-parceiros h1{
+    font-family: var(--H1-family);
+    font-weight: var(--H1-weight);
+    font-size: 3rem;
+    text-decoration: var(--H1-decoration);
+    color: var(--cor-texto);
+}
+
+.container-parceiros h2{
+    text-align: right;
+    color: var(--acento-claro);
+    font-size: 2rem;
+    padding-right: 5rem;
+}
+
+/* =================== SEGUNDO BLOCO DA PÁGINA PARCEIROS =================== */
+
+.carrossel-parceiros {
+   display: flex;
+   width: 100%;
+   overflow-x: auto;
+   gap: 1em;
+   scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s ease;
+}
+
+.carrossel-parceiros:hover {
+  scrollbar-color: var(--cor-texto) var(--fundo-primario);
+}
+
+.carrossel-parceiros::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+

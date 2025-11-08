@@ -19,3 +19,7 @@ body{
     font-weight: medium;
     overflow-x: hidden;
 }
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--cor-texto) var(--fundo-primario);
+}
