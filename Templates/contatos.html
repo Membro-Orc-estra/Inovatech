@@ -64,30 +64,34 @@
                 <div class="cargo-telefone">
                     <div class="cargo">
                         <label for="cargo-select">Qual o seu cargo?</label>
-                        <select id="cargo-select" name="Cargo">
-                            <option value="" disabled selected>Cargo</option>
-                            <option value="CEO/Sócio/Diretor">CEO/Sócio/Diretor</option>
-                            <option value="Gerente/Coordenador">Gerente/Coordenador</option>
-                            <option value="Analista">Analista</option>
-                            <option value="Professor/Área da Educação">Professor/Área da Educação</option>
-                            <option value="Estudante/Estagiário">Estudante/Estagiário</option>
-                            <option value="Outro">Outro Cargo</option>
-                        </select>
+                        <div class="select-wrapper">
+                            <select id="cargo-select" name="Cargo" required>
+                                <option value="" disabled selected>Cargo</option>
+                                <option value="CEO/Sócio/Diretor">CEO/Sócio/Diretor</option>
+                                <option value="Gerente/Coordenador">Gerente/Coordenador</option>
+                                <option value="Analista">Analista</option>
+                                <option value="Professor/Área da Educação">Professor/Área da Educação</option>
+                                <option value="Estudante/Estagiário">Estudante/Estagiário</option>
+                                <option value="Outro">Outro Cargo</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="onde-conheceu">
                         <label for="conheceu-select">Por onde nos conheceu</label>
-                        <select id="conheceu-select" name="Fonte">
-                            <option value="" disabled selected>...</option>
-                            <option value="Anúncios do Google">Anúncios do Google</option>
-                            <option value="Mídias Sociais">Mídias Sociais</option>
-                            <option value="Indicação">Indicação</option>
-                            <option value="Eventos">Eventos</option>
-                            <option value="Outro">Outro</option>
-                        </select>
+                        <div class="select-wrapper">
+                            <select id="conheceu-select" name="Fonte" required>
+                                <option value="" disabled selected>...</option>
+                                <option value="Anúncios do Google">Anúncios do Google</option>
+                                <option value="Mídias Sociais">Mídias Sociais</option>
+                                <option value="Indicação">Indicação</option>
+                                <option value="Eventos">Eventos</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="telefone">
                         <label for="telefone">Qual o seu telefone?</label>
-                        <input type="tel" id="telefone" name="Telefone" placeholder="Telefone">
+                        <input type="tel" id="telefone" name="Telefone" placeholder="Telefone" required>
                     </div>
                 </div>
                 
@@ -103,7 +107,7 @@
             </div>
         </form>
 
-        <h1>⠀⠀⠀Acesse nossas mídias sociais!</h1>
+        <h1 class="titulo-midias">⠀⠀⠀Acesse nossas mídias sociais!</h1>
         <div class="midias-sociais">
             <div class="rede-social">
                 <a href="https://www.whatsapp.com/?lang=pt\" target="_blank" rel="noopener noreferrer">
