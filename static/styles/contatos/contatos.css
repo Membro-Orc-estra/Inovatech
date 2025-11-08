@@ -201,6 +201,10 @@ textarea:focus {
     text-decoration: var(--H1-decoration);
     color: var(--cor-texto);
     align-self: flex-start;
+    @media (max-width: 768px){
+        text-align: center;
+        margin-left: -10%;
+    }
 }
 
 .midias-sociais{
@@ -211,6 +215,9 @@ textarea:focus {
     /* padding: 0 4rem; */
     padding-top: 2rem;
     box-sizing: border-box;
+    @media(max-width: 768px){
+        flex-direction: column;
+    }
 }
 .rede-social{
     display: flex;
