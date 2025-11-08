@@ -10,6 +10,18 @@
     text-decoration: var(--H1-decoration);
     color: var(--cor-texto);
 }
+.container-texto h1:nth-child(1){
+    @media(max-width: 1024px){
+        display: none;
+    }
+}
+
+.conversar{
+    display: none;
+    @media(max-width: 1024px){
+        display: inline;
+    }
+}
 
 .container-texto h2{
     margin-left: 6rem;
@@ -196,8 +208,9 @@ textarea:focus {
     justify-content: space-between;
     gap: 2rem;
     width: 90%;
-    padding: 0 4rem;
+    /* padding: 0 4rem; */
     padding-top: 2rem;
+    box-sizing: border-box;
 }
 .rede-social{
     display: flex;
