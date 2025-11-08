@@ -66,6 +66,13 @@
    gap: 1em;
    scrollbar-color: transparent transparent;
   transition: scrollbar-color 0.3s ease;
+  
+}
+
+.carrossel-parceiros img{
+    @media (max-width:768px){
+    width: 15.625rem;
+  }
 }
 
 .carrossel-parceiros:hover {
