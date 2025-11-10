@@ -42,6 +42,9 @@
     font-size: 3rem;
     text-decoration: var(--H1-decoration);
     color: var(--cor-texto);
+    @media (max-width: 675px){
+        font-size: 1.3rem;
+    }
 }
 
 .container-parceiros h2{
@@ -49,9 +52,8 @@
     color: var(--acento-claro);
     font-size: 2rem;
     padding-right: 5rem;
-    @media(max-width: 451px){
-        font-size: 1.2rem;
-        text-align: center;
+    @media(max-width: 675px){
+        font-size: .85rem;
         padding-left: 4rem;
         
     }

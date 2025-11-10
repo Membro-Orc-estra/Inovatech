@@ -10,6 +10,9 @@
     justify-content: center;
     width: 100% ;
     gap : 2rem;
+    @media (max-width: 675px){
+        min-height: 30vh;
+    }
 }
 
 .servicos-container h1{
@@ -18,6 +21,9 @@
     font-size: 3rem;
     text-decoration: var(--H1-decoration);
     color: var(--cor-texto);
+    @media (max-width: 675px){
+        font-size: 1.3rem;
+    }
 }
 
 .servicos-container h2{
@@ -25,7 +31,7 @@
     font-size: 2rem;
     padding-right: 5rem;
     @media (max-width: 675px){
-        font-size: 1.2rem;
+        font-size: .85rem;
     }
 }
 
@@ -61,6 +67,7 @@
 
 .card li{
     text-align: center;
+    list-style-type: none;
 }
 
 .card li:first-of-type {

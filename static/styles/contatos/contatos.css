@@ -9,8 +9,8 @@
     font-size: 3rem;
     text-decoration: var(--H1-decoration);
     color: var(--cor-texto);
-    @media (max-width: 451px){
-        font-size: 2rem;
+    @media (max-width: 675px){
+        font-size: 1.3rem;
     }
     
 }
@@ -31,6 +31,9 @@
     margin-left: 6rem;
     padding: 2rem 0;
     font-weight: 500;
+    @media (max-width: 675px){
+        font-size: 1rem;
+    }
 }
 
 /* =================== SEGUNDO BLOCO DA PÁGINA CONTATOS =================== */
@@ -213,8 +216,8 @@ textarea:focus {
         text-align: center;
         margin-left: -10%;
     }
-    @media (max-width: 451px){
-        font-size: 2rem;
+    @media (max-width: 675px){
+        font-size: 1.3rem;
     }
 }
 
