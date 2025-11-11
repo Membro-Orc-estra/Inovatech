@@ -189,6 +189,13 @@ textarea:focus {
     padding: 1rem 1.8rem;
     border-radius: 4rem;
     width: 25%;
+    @media(max-width: 768px){
+        font-size: .8rem;
+    }
+    
+    @media(max-width: 675px){
+        font-size: .5rem;
+    }
 }
 
 #form-status.success {
@@ -202,6 +209,7 @@ textarea:focus {
     color: #721C24;
     transform: translateY(0); 
 }
+
 
 /* =================== TERCEIRO BLOCO DA PÁGINA CONTATOS =================== */
 
@@ -218,6 +226,7 @@ textarea:focus {
     }
     @media (max-width: 675px){
         font-size: 1.3rem;
+        padding-left: 1.7rem;
     }
 }
 
